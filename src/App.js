@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/header';
 import Search from './components/search';
+import WeekendSearch from './components/weekendSearch';
 import './App.css';
 
 class App extends Component {
@@ -30,6 +31,10 @@ class App extends Component {
         <Header />
         <Search
           onSearchTermChange={term => this.citySearch(term)}
+        />
+        <WeekendSearch
+          satEvents={this.state.saturday}
+          sunEvents={this.state.sunday}
         />
       </div>
     );
