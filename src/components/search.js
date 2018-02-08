@@ -8,23 +8,23 @@ class Search extends Component {
 		this.state = { term: '' };
 	};
 
-	onInputChange(term) {
-		this.setState({ term });
-		this.props.onSearchTermChange(term);
-	};
 
 	render() {
 		return (
 			<div className="search-bar">
 				<input 
-					value={this.state.term || "Search events or categories"} 
+					value={this.state.term || "Search City"} 
 					onChange={event => this.onInputChange(event.target.value)} />
-				<input 
-					value={this.state.term || "Enter City"} 
-					onChange={event => this.onInputChange(event.target.value)} />
-				</div>
+				
+					
+			</div>
 		)
 	}
+
+	onInputChange(term) {
+		this.setState({ term });
+		this.props.onSearchTermChange(term);
+	};
 }
 
 
