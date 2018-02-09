@@ -2,32 +2,35 @@ import React from 'react';
 import EventItem from './eventItem'
 
 const WeekendSearch = (props) => {
-	
-
-	const saturdayItems = props.saturday.map((event) => {
+	// console.log(props.satEvents[0].logo.url)
+	let saturdayItems = props.satEvents.map((event) => {
 		return (
 			<EventItem
-				key={event.tag}
+				key={event.capacity}
 				event={event}
 			/>
 		);
 	});
 
-	const sundayItems = props.sunday.map((event) => {
+	let sundayItems = props.sunEvents.map((event) => {
 		return (
 			<EventItem
-				key={event.tag}
+				key={event.capacity}
 				event={event}
 			/>
 		);
 	});
+// } else {
+// 	let saturdayItems = <li>Saturday</li>;
+// 	let sundayItems = <li>Saturday</li>
+// }
 
 	return (
 		<div>
-			<ul classname="col-md-6 list-group">
+			<ul className="col-md-6 list-group">
 				{saturdayItems}
 			</ul>
-			<ul classname="col-md-6 list-group">
+			<ul className="col-md-6 list-group">
 				{sundayItems}
 			</ul>
 		</div>
