@@ -11,13 +11,13 @@ const EventItem = ({event}) => {
 
 	return (
 		<li className="list-group-item">
-			<div className="video-list media">
+			<div className="video-list">
 				<div className="media-left">
 					<img className="media-object" src={image} alt="event "/>
 				</div>
 
 				<div className="media-body">
-					<div className="media-heading">
+					<div className="event-title">
 						{eventHeading}
 					</div>
 				</div>
