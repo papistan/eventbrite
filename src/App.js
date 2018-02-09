@@ -18,8 +18,7 @@ class App extends Component {
     super(props);
 
     this.state = { 
-      saturday: [],
-      sunday: []
+      saturday: []
     };
     this.citySearch = this.citySearch.bind(this);
     // this.citySearch('San Francisco');
@@ -29,11 +28,12 @@ class App extends Component {
     this.citySearch('San Francisco')
   }
 
-  citySearch(city) {
-   const token = '';
+  citySearch(city = "", keyword = "") {
+   const token = '3TN4ED2N6RJDUIVXUQWY';
    let cityField = city;
+   let keywordSearch = `&start_date.keyword=${keyword}`;
    let price = " " || "&price=free";
-   let searchQuery = `https://www.eventbriteapi.com/v3/events/search/?token=${token}&expand=venue&location.within=1mi&location.address=${cityField}&sort_by=best${price}`;
+   let searchQuery = `https://www.eventbriteapi.com/v3/events/search/?token=${token}&expand=venue&location.within=1mi&location.address=${cityField}&sort_by=best${keywordSearch}${price}`;
     const self = this;
     axios.get(searchQuery)
       .then((data) => {
@@ -67,7 +67,6 @@ class App extends Component {
           />
           <WeekendSearch
             satEvents={this.state.saturday}
-            sunEvents={this.state.sunday}
           />
         </div>
       );

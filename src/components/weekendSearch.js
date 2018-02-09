@@ -12,26 +12,15 @@ const WeekendSearch = (props) => {
 		);
 	});
 
-	let sundayItems = props.sunEvents.map((event) => {
-		return (
-			<EventItem
-				key={event.capacity}
-				event={event}
-			/>
-		);
-	});
 // } else {
 // 	let saturdayItems = <li>Saturday</li>;
 // 	let sundayItems = <li>Saturday</li>
 // }
 
 	return (
-		<div>
-			<ul className="col-md-6 list-group">
+		<div className="scroll-list">
+			<ul className="col-md-6 col-md-offset-3 list-group">
 				{saturdayItems}
-			</ul>
-			<ul className="col-md-6 list-group">
-				{sundayItems}
 			</ul>
 		</div>
 	)
