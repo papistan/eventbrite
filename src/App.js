@@ -31,9 +31,19 @@ class App extends Component {
   citySearch(city = "", keyword = "") {
    const token = '3TN4ED2N6RJDUIVXUQWY';
    let cityField = city;
-   let keywordSearch = `&start_date.keyword=${keyword}`;
-   let price = " " || "&price=free";
-   let searchQuery = `https://www.eventbriteapi.com/v3/events/search/?token=${token}&expand=venue&location.within=1mi&location.address=${cityField}&sort_by=best${keywordSearch}${price}`;
+   let keywords = keyword
+
+   if(cityField === "") {
+      cityField = "San Francisco"
+    } 
+
+    if(keyword === "") {
+      keywords = "today"
+    }
+
+   // let price = " " || "&price=free";
+   let searchQuery = `https://www.eventbriteapi.com/v3/events/search/?token=${token}&expand=venue&location.within=1mi&location.address=${cityField}&sort_by=best&start_date.keyword=${keywords}`;
+   console.log(searchQuery)
     const self = this;
     axios.get(searchQuery)
       .then((data) => {
@@ -63,7 +73,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Search
-            onSearchTermChange={term => this.citySearch(term)}
+            onSearchTermChange={(term, keyword) => this.citySearch(term, keyword)}
           />
           <WeekendSearch
             satEvents={this.state.saturday}

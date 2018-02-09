@@ -43,6 +43,7 @@
   font-size: large;
 }
 
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -52,15 +53,16 @@
   color: #F86820;
 }
 
+.search {
+
+}
 .search-bar {
   margin: 20px;
-  /*margin-top: 11%;*/
-  text-align: center;
 }
 
 .search-bar input {
-  width: 30%;
-  font-size: 1.1em;
+  width: 41%;
+  font-size: 1.4em;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   border: 1px solid grey;
@@ -68,11 +70,19 @@
   color: grey;
 }
 
+.dropn-down {
+  width: 40%;
+  margin-left: 30%;
+  margin-bottom: 1%;
+}
+
 .list-group-item {
   width: 600px;
   margin: auto;
 }
-
+.list-group-item:hover {
+  background-color: #F86820;
+}
 .event-title {
   font-size: 1.1em;
   font-family: "Open Sans", sans-serif;
@@ -118,6 +128,10 @@
       width: 375px;
     }
     
+    .dropn-down {
+      width: 70%;
+      margin-left: 10%;
+    }
 
 }
 
