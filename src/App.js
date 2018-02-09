@@ -4,6 +4,14 @@ import Search from './components/search';
 import WeekendSearch from './components/weekendSearch';
 import './App.css';
 
+
+var dotenv = require('dotenv');
+dotenv.load();
+
+let API = process.env.API_KEY;
+
+console.log("This is API" + API);
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +25,11 @@ class App extends Component {
   }
 
   citySearch(city) {
-    console.log(city)
+    // const API_KEY = API_KEY;
+  
+
+    // headers Authorization: Bearer API_KEY
+
     let saturday = "API_CALLfree + city"
     let sunday = ""
 
