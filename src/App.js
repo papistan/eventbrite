@@ -6,8 +6,8 @@ import axios from 'axios';
 import './App.css';
 
 
-var dotenv = require('dotenv');
-dotenv.load();
+// var dotenv = require('dotenv');
+// dotenv.load();
 
 // let API = process.env.API_KEY;
 
