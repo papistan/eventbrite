@@ -22,17 +22,13 @@ class Search extends Component {
 	
 	render() {
 		return (
-			<div className="search">
 				<div className="search-bar">
 					<input 
 						placeholder="City name"
 						value={this.state.term} 
 						onChange={event => this.onInputChange(event.target.value)} />
-				</div>
-				<div className="dropn-down">
 					<Dropdown options={options} onChange={event => this.onDropdownChange(event.value)} value={this.state.time.label} placeholder={"Select new days"} />
 				</div>
-			</div>
 		)
 	}
 
