@@ -23,11 +23,11 @@ class Search extends Component {
 	render() {
 		return (
 				<div className="search-bar">
+					<Dropdown options={options} onChange={event => this.onDropdownChange(event.value)} value={this.state.time.label} placeholder={"Select new days"} />
 					<input 
-						placeholder="City name"
+						placeholder="City      "
 						value={this.state.term} 
 						onChange={event => this.onInputChange(event.target.value)} />
-					<Dropdown options={options} onChange={event => this.onDropdownChange(event.value)} value={this.state.time.label} placeholder={"Select new days"} />
 				</div>
 		)
 	}
