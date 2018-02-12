@@ -11,17 +11,19 @@ const EventItem = ({event}) => {
 
 	return (
 		<li className="list-group-item">
+			<a href={event.url} target="_blank">
 			<div className="video-list">
 				<div className="media-left">
-					<img className="media-object" src={image} alt="event "/>
+					<img className="media-object" src={image} href={event.url} alt="event "/>
 				</div>
 
-				<div className="media-body">
+				<div className="media-body heading">
 					<div className="event-title">
 						{eventHeading}
 					</div>
 				</div>
 			</div>
+			</a>
 		</li>
 	)
 }
