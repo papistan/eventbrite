@@ -10,7 +10,6 @@ const options = [
 	{ value: 'this_month', label: 'This Month' },
 	{ value: 'next_month', label: 'Next Month' }
 ]
-
 const defaultOption = options[0]
 
 class Search extends Component {
