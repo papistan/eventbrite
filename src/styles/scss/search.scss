@@ -1,11 +1,9 @@
-
 .search-bar {
   display: inline-block;
   width: 70%;
   margin-top: 2%;
   margin-bottom: 1%;
 }
-
 
 .search-bar input {
   text-align: center;
@@ -24,4 +22,8 @@
   border: 1px solid grey;
   color: grey;
   border: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
 }
