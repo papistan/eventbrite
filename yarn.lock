@@ -1330,7 +1330,7 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@^2.2.3:
+classnames@^2.2.0, classnames@^2.2.3:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -5233,6 +5233,12 @@ react-dropdown@^1.3.6:
 react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
+
+react-flipcard@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/react-flipcard/-/react-flipcard-0.2.1.tgz#7d439c5755e5a58d81ddea0c8ff0712c3d8e8048"
+  dependencies:
+    classnames "^2.2.0"
 
 react-scripts@1.1.0:
   version "1.1.0"
