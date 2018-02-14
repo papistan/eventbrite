@@ -3,7 +3,6 @@ import Header from './components/header';
 import Search from './components/search';
 import WeekendSearch from './components/weekendSearch';
 import axios from 'axios';
-import './App.css';
 
 
 // var dotenv = require('dotenv');

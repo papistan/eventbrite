@@ -1,0 +1,20 @@
+
+.list-group-item {
+  width: 600px;
+  margin: auto;
+}
+.list-group-item:hover {
+  background-color: #F86820;
+}
+.heading {
+  font-size: 1.1em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+
+
+.event-title {
+  height: 200px;
+  overflow: scroll;
+}
