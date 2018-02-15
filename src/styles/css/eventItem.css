@@ -1,5 +1,10 @@
 .event-item {
   flex: 1;
+  -webkit-flex: 1;
+  flex-basis: auto;
+  width: 30%;
+  margin-left: 0px;
+  text-align: center;
 }
 
 .event-item:hover {
@@ -7,11 +12,8 @@
   text-decoration: none;
 }
 
-.heading {
-  font-size: 1.1em;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  text-align: left;
+.event-image {
+  max-width: 351px;
 }
 
 .event-title {

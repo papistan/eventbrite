@@ -11,7 +11,7 @@ const EventItem = ({ event }) => {
   // const urlz = event.url
   // const description = event.description.text;
   // const free = event.is_free === true;
-  const time = event.start.local;
+  // const time = event.start.local;
   const address = event.venue.address.address_1;
 
   return (
@@ -19,15 +19,18 @@ const EventItem = ({ event }) => {
       <div>
         <div>
           <a href={event.url} target="_blank">
-            <img src={image} href={event.url} alt="event " />
+            <img
+              className="event-image"
+              src={image}
+              href={event.url}
+              alt="event "
+            />
           </a>
         </div>
 
         <div>
           <div>{eventHeading}</div>
-          <p className="small-event-text">
-            {address} {time}
-          </p>
+          <p className="small-event-text">{address}</p>
         </div>
       </div>
     </li>

@@ -8,7 +8,7 @@ const WeekendSearch = props => {
   });
 
   return (
-    <div>
+    <div className="event-container">
       <ul className="event-list">{saturdayItems}</ul>
     </div>
   );
