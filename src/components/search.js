@@ -23,6 +23,7 @@ class Search extends Component {
     return (
       <div className="search-bar">
         <Dropdown
+          className="dropdown"
           options={options}
           onChange={event => this.onDropdownChange(event.value)}
           value={this.state.time.label}

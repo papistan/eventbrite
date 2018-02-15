@@ -1,11 +1,12 @@
 .App-header {
   background-color: white;
   height: 80px;
+  width: 100%;
   padding: 7px;
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+  box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
 }
 
 .App-logo {
@@ -15,7 +16,6 @@
   margin-left: 1%;
   margin-bottom: 1%;
 }
-
 
 .App-title {
   margin-left: 2%;
@@ -31,10 +31,13 @@
   font-size: large;
 }
 
-
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .powered {
@@ -42,6 +45,6 @@
 }
 
 .eb-orange-text {
-  color: #F86820;
+  color: #f86820;
   font-size: 1.5rem;
 }

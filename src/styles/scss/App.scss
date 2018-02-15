@@ -1,57 +1,52 @@
+html {
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
-.App {
-  text-align: center;
+ul {
+  list-style-type: none;
+  margin-left: 0;
 }
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .App-title {
-      font-size: 1.5rem;
-    }
-    .header-subtitle {
-      float: center;
-    }
+  /* For mobile phones: */
 
-    .search-bar {
-      margin-top: 10%;
-    }
+  .App {
+    width: 100%;
+  }
 
-    .search-bar input {
-      width: 90%;
-    }
+  .App-title {
+    font-size: 30px;
+  }
 
-    .list-group-item {
-      text-align: center;
-      width: 375px;
-      padding: 0%;
-      height: 300px;
-    }
-    .video-list {
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-    }
-    .media-left {
-      height: 200px;
-      width: 375px;
-    }
-    .event-title {
-      width: 375px;
-    }
-    
-    .dropn-down {
-      width: 70%;
-      margin-left: 10%;
-    }
+  .event-item {
+    width: 100%;
+  }
 
+  .powered {
+    display: none;
+  }
+
+  .eb-orange-text {
+    display: none;
+  }
+
+  .search-bar {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .search-bar input {
+    width: 90%;
+  }
+
+  .event-title {
+    width: 375px;
+  }
 }
-
-
-
-
