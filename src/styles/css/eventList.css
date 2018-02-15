@@ -1,0 +1,7 @@
+.event-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=eventList.css.map */

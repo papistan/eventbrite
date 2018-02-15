@@ -8,8 +8,8 @@ const WeekendSearch = props => {
   });
 
   return (
-    <div className="scroll-list">
-      <ul className="col-md-6 col-md-offset-3 list-group">{saturdayItems}</ul>
+    <div>
+      <ul className="event-list">{saturdayItems}</ul>
     </div>
   );
 };
