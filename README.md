@@ -19,6 +19,7 @@ Stretch goals:
 - add WeekendSearch option to easily search by Sat + Sun
 - connect to post API built on Node, Express and MongoDB to save, share and build additional features
 
+## Screenshots
 - Desktop
 
 ![desktop screen shot](desktop.png "Desktop Screenshot")
